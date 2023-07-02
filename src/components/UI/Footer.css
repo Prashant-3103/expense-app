@@ -1,0 +1,92 @@
+/* Footer styles */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+body, html {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+  }
+  *{
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Titillium Web", sans-serif;
+    }
+  }
+
+  footer {
+    background-color: #29335c;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+height: 20%;
+   width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    padding: 1.1rem 1.1rem
+  }
+
+  li {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+  }
+
+  /* Hover effects */
+  li:hover {
+    color: #ffcc00;
+  }
+
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animation for h1 */
+  h1 {
+    animation: fadeIn 0.5s ease;
+  }
+  .social-icons li {
+    color: #fff;
+  }
+
+  .social-icons li:hover {
+   font-size: 1.2rem;
+   transition: ease-in-out;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: row;
+      align-items: center;
+
+    }
+  }
